@@ -1,0 +1,186 @@
+{
+    "contracts": {
+        "/Users/yassin/Documents/Flashloan/src/interfaces/IERC3156FlashBorrower.sol": {
+            "IERC3156FlashBorrower": {
+                "abi": [
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "address",
+                                "name": "initiator",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "address",
+                                "name": "token",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "amount",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "fee",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "bytes",
+                                "name": "data",
+                                "type": "bytes"
+                            }
+                        ],
+                        "name": "onFlashLoan",
+                        "outputs": [
+                            {
+                                "internalType": "bytes32",
+                                "name": "",
+                                "type": "bytes32"
+                            }
+                        ],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    }
+                ],
+                "devdoc": {
+                    "kind": "dev",
+                    "methods": {},
+                    "version": 1
+                },
+                "evm": {
+                    "bytecode": {
+                        "object": ""
+                    },
+                    "deployedBytecode": {
+                        "object": ""
+                    },
+                    "gasEstimates": null,
+                    "methodIdentifiers": {
+                        "onFlashLoan(address,address,uint256,uint256,bytes)": "23e30c8b"
+                    }
+                },
+                "userdoc": {
+                    "kind": "user",
+                    "methods": {},
+                    "version": 1
+                }
+            }
+        },
+        "/Users/yassin/Documents/Flashloan/src/interfaces/IERC3156FlashLender.sol": {
+            "IERC3156FlashLender": {
+                "abi": [
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "address",
+                                "name": "token",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "amount",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "flashFee",
+                        "outputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "contract IERC3156FlashBorrower",
+                                "name": "receiver",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "address",
+                                "name": "token",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "amount",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "bytes",
+                                "name": "data",
+                                "type": "bytes"
+                            }
+                        ],
+                        "name": "flashloan",
+                        "outputs": [
+                            {
+                                "internalType": "bool",
+                                "name": "",
+                                "type": "bool"
+                            }
+                        ],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "address",
+                                "name": "token",
+                                "type": "address"
+                            }
+                        ],
+                        "name": "maxFlashLoan",
+                        "outputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    }
+                ],
+                "devdoc": {
+                    "kind": "dev",
+                    "methods": {},
+                    "version": 1
+                },
+                "evm": {
+                    "bytecode": {
+                        "object": ""
+                    },
+                    "deployedBytecode": {
+                        "object": ""
+                    },
+                    "gasEstimates": null,
+                    "methodIdentifiers": {
+                        "flashFee(address,uint256)": "d9d98ce4",
+                        "flashloan(address,address,uint256,bytes)": "63ad2c41",
+                        "maxFlashLoan(address)": "613255ab"
+                    }
+                },
+                "userdoc": {
+                    "kind": "user",
+                    "methods": {},
+                    "version": 1
+                }
+            }
+        }
+    },
+    "sources": {
+        "/Users/yassin/Documents/Flashloan/src/interfaces/IERC3156FlashBorrower.sol": {
+            "id": 0
+        },
+        "/Users/yassin/Documents/Flashloan/src/interfaces/IERC3156FlashLender.sol": {
+            "id": 1
+        }
+    }
+}

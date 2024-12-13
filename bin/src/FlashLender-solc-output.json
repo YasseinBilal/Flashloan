@@ -1,0 +1,18 @@
+{
+    "errors": [
+        {
+            "component": "general",
+            "errorCode": "7920",
+            "formattedMessage": "DeclarationError: Identifier not found or not unique.\n  --> /Users/yassin/Documents/Flashloan/src/FlashLender.sol:30:16:\n   |\n30 |     ) external nonReentrant returns (bool) {\n   |                ^^^^^^^^^^^^\n\n",
+            "message": "Identifier not found or not unique.",
+            "severity": "error",
+            "sourceLocation": {
+                "end": 1001,
+                "file": "/Users/yassin/Documents/Flashloan/src/FlashLender.sol",
+                "start": 989
+            },
+            "type": "DeclarationError"
+        }
+    ],
+    "sources": {}
+}
